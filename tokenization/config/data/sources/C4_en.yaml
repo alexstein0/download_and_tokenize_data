@@ -1,0 +1,15 @@
+c4:
+  path: allenai/c4
+  raw_extension: c4/en/train/
+#  processed_extension: flan
+#  saved_path: /fs/cml-projects/llm-pretraining/datasets/raw/openorca_flan/train/
+  qualifier: en
+  split: train
+  fields:
+    - text
+
+  max_entries_in_dataset: 5e7 # 364868892
+
+#    features: ['inputs', 'targets', '_template_idx', '_task_source', '_task_name', '_template_type'],
+
+

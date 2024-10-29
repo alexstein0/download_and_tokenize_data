@@ -1,0 +1,3 @@
+# @package _global_
+run_id: default
+tokenizer_name: ${tokenizer.name}_${data_name}_${tokenizer.vocab_size}_${run_id}

@@ -1,0 +1,16 @@
+name: pg19
+defaults:
+  - sources:
+      - pg19
+  - _self_
+
+#rows: "[:20]"
+
+data_sampling: all # all or even
+shuffle: false
+
+# also used during tokenization
+max_pct: 1.0
+shard_num: -1
+total_shards: -1
+max_entries_in_dataset: -1

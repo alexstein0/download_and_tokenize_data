@@ -1,0 +1,34 @@
+# @package _global_
+# Configuration defaults
+# Settings are separated into case, attack analysis
+defaults:
+#  - experiment: ???
+  - data: MMLU_Orca
+  - impl: torch-default
+  - wandb: none
+  - _self_
+  - override hydra/job_logging: custom
+
+base_dir: outputs
+
+data:
+  shuffle: false
+  data_dir: /fs/cml-projects/llm-pretraining/datasets/
+  processed_extension:
+
+get_raw_data: false
+
+tokenizer: 
+
+sequence_length:
+
+hydra:
+  sweep:
+    dir: ${base_dir}/${name}/${seed}/${now:%Y-%m-%d}/${now:%H-%M-%S}
+  run:
+    dir: ${base_dir}/${name}/${seed}/${now:%Y-%m-%d}/${now:%H-%M-%S}
+  job:
+    chdir: True
+
+seed: # Optional: Set initial seed
+name: default # A name for this run [will be used for the outputs folder]

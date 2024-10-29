@@ -1,0 +1,12 @@
+default:
+  name:
+  saved_path:
+  qualifier:
+  split:
+  fields: []
+
+  max_entries_in_dataset:
+
+#    features: ['inputs', 'targets', '_template_idx', '_task_source', '_task_name', '_template_type'],
+
+

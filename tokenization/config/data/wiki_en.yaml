@@ -1,0 +1,16 @@
+name: wiki_en
+defaults:
+  - default
+  - sources:
+      - wiki_en
+  - _self_
+
+#vocab_size: 49152 #32768 # 2^17
+
+# Dataset Formation
+seq_length: 512
+include_eot_token_in_corpus: True
+
+max_entries_in_dataset: 25e7 #10e6 # Select only this many examples from the dataset # 20e6 are ok if all are chosen. Oversample if filtering
+#max_seq_in_tokenized_dataset: 5e4 #5e5 # Select only this many tokenized sequences.
+# max_seq_in_tokenized_dataset should be just slightly more than budget * 60 * 60 * expected tokens/sec for the single epoch of training

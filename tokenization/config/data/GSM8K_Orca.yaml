@@ -1,0 +1,13 @@
+name: GSM8K_Orca
+defaults:
+  - default
+  - sources:
+      - gsm8k
+#      - Orca
+#      - flan
+  - _self_
+
+#vocab_size: 49152 #32768 # 2^17
+
+#max_seq_in_tokenized_dataset: 5e4 #5e5 # Select only this many tokenized sequences.
+# max_seq_in_tokenized_dataset should be just slightly more than budget * 60 * 60 * expected tokens/sec for the single epoch of training

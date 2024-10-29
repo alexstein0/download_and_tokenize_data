@@ -1,0 +1,15 @@
+# @package _global_
+defaults:
+  - default_trainer
+#  - /tokenizer/pretokenizers: GPT4
+  - override /data: MMLU_Orca
+#  - override /tokenizer: SentencePieceBPE
+  - override /tokenizer: GPT2
+  - _self_
+
+#tokenizer:
+#  vocab_size: 64_000
+run_id: default
+tokenizer_name: ${tokenizer.name}_${data.name}_${tokenizer.vocab_size}_${run_id}
+
+ref: ${tokenizer.ref}

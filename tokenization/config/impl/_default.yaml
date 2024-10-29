@@ -1,0 +1,24 @@
+# Settings for implementation details
+# These settings "should" not influence the outcome of the computation in major ways, only its speed.
+# These settings are generic implementation details
+# -----------------------------------------------------------------------------------------------------
+
+# This is the main folder where data will be stored (such as caches of datasets and tokenizers):
+# This can be an absolute path (which will be honored) or a relative path
+# The relative path will be executed relative to the cfg.base_dir
+# This behavior is controlled in the main_launcher
+path: data
+
+is_mac: False
+
+# Basic compute settings
+threads: 128 # maximal number of cpu dataloader workers used per GPU, this value will never exceed num_gpus * num_physical threads
+
+# Default floating point precision:
+default_precision: float # needs to be a pytorch datatype
+
+# Distributed training
+dist_backend: nccl
+
+# Misc:
+enable_huggingface_offline_mode: False

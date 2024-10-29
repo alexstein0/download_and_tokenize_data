@@ -1,0 +1,10 @@
+wiki_simple:
+  path: /fs/cml-projects/llm-pretraining/classifier_datasets/wiki_simple
+  qualifier:
+  split: train
+  fields:
+    - text
+
+  max_entries_in_dataset: 241787
+
+#dict_keys(['question', 'subject', 'choices', 'answer'])

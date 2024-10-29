@@ -1,0 +1,10 @@
+pg19:
+  path: emozilla/pg19
+  fields:
+    - text
+  name: pg19
+  qualifier:
+  split: #train
+  
+  max_entries_in_dataset: #10
+  rows: #"[:10]"

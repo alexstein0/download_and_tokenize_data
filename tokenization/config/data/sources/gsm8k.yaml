@@ -1,0 +1,12 @@
+gsm8k:
+  path: gsm8k
+#  raw_extension: gsm8k
+#  processed_extension: gsm8k
+  qualifier: main
+  split: train
+  fields:
+    - question
+    - answer
+
+  max_entries_in_dataset: 7473
+

@@ -1,0 +1,15 @@
+wiki_en:
+  name: wiki_en
+
+  path: /fs/cml-projects/llm-pretraining/classifier_datasets/wiki_en
+  qualifier:
+  split:
+  fields:
+    - text
+
+  max_entries_in_dataset: 6407814
+#fields:
+#  - text
+
+#dict_keys(['question', 'subject', 'choices', 'answer'])
+#python tokenization_runner.py  +experiment=wiki_simple_experiment

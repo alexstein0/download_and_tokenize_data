@@ -1,0 +1,9 @@
+# @package _global_
+defaults:
+  - default_trainer
+  - override /data: Orca
+  - override /tokenizer: SentencePieceBPE
+  - _self_
+
+
+# python run_tokenization.py +experiment=Orca_exp

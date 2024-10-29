@@ -1,0 +1,16 @@
+flan:
+  path: flan
+  raw_extension: openorca_flan/train/
+#  processed_extension: flan
+#  saved_path: /fs/cml-projects/llm-pretraining/datasets/raw/openorca_flan/train/
+  qualifier:
+  split:
+  fields:
+    - inputs
+    - targets
+
+  max_entries_in_dataset: 377759274
+
+#    features: ['inputs', 'targets', '_template_idx', '_task_source', '_task_name', '_template_type'],
+
+

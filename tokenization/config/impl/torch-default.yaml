@@ -1,0 +1,15 @@
+# Settings for implementation details
+# These settings "should" not influence the outcome of the computation in major ways, only its speed.
+# These settings are pytorch implementation details, tuned for singl(ish) GPU, sane pytorch stuff
+# -----------------------------------------------------------------------------------------------------
+
+name: torch-default
+defaults:
+  - _default
+  - _self_
+
+# Basic pytorch settings
+benchmark: True # CUDNN benchmarking
+deterministic: False # This option will disable non-deterministic ops
+tf32_allowed: True
+matmul_precision: medium # highest/high/medium

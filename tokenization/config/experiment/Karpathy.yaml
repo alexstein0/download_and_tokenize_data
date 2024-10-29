@@ -1,0 +1,20 @@
+# @package _global_
+defaults:
+  - default_trainer
+#  - /tokenizer/pretokenizers: GPT4
+#  - override /data: MMLU_Orca
+  - override /tokenizer: GPT4
+  - _self_
+
+#tokenizer:
+#  normalizers: null
+#  pretokenizers:
+#    - ${tokenizer.name}-karpathy
+#    - ByteLevel:
+#        use_regex: False
+#        add_prefix_space: False
+#  tokenization_model:
+#    BPE:
+#      byte_fallback: True
+#  post_processors: null
+#  decoders: ByteLevel

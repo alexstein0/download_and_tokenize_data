@@ -1,0 +1,15 @@
+Orca:
+  name: Orca
+
+  path: Open-Orca/OpenOrca
+  qualifier:
+  split: train
+  fields:
+    - system_prompt
+    - question
+    - response
+
+#max_entries_in_dataset: 99842
+
+#dict_keys(['question', 'subject', 'choices', 'answer'])
+#/fs/cml-projects/llm-pretraining/classifier_datasets/

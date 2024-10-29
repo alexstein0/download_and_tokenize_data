@@ -1,0 +1,33 @@
+tokenizer_list:
+  - meta-llama/Llama-2-70b-chat-hf
+  - SentencePieceBPE_wiki_en_32000_Llama_bytes_swapped
+#  - meta-llama/Llama-2-7b-chat-hf
+#  - t5-base
+#  - my_tokenizer
+#  - SentencePieceBPE_MMLU
+#  - khalid
+#  - SentencePieceBPE_wiki_simple
+#  - SentencePieceBPE_Orca
+#  - gpt2
+#  - gpt4
+
+tokenizer_dict:
+#  - name: llama
+#    ref:
+#      name: meta-llama/Llama-2-70b-chat-hf
+#      ref_type: HF
+#    trained:
+#      - SentencePieceBPE_wiki_en_32000_Llama_bytes_swapped
+#  - name: gpt2
+#    ref:
+#      name: gpt2
+#      ref_type: HF
+#    trained:
+#      - SentencePieceBPE_wiki_en_32000_GPT2
+  - name: gpt4
+    ref:
+      name: cl100k_base
+      ref_type: tiktoken
+    trained:
+      - GPT4_MMLU-Orca_100257_Karpathy_FLAN
+      - GPT4_MMLU-Orca_100257_HF_FLAN

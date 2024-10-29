@@ -1,0 +1,11 @@
+# @package _global_
+defaults:
+  - default_trainer
+  - override /data: wiki_simple
+  - override /tokenizer: SentencePieceBPE
+  - _self_
+
+
+# python run_tokenization.py +experiment=wiki_simple_experiment
+
+tokenizer_name: ${tokenizer.name}_${data.name}

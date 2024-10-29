@@ -1,0 +1,14 @@
+MMLU:
+  path: cais/mmlu
+  raw_extension: mmlu
+#  processed_extension: mmlu
+  qualifier: all
+  split: auxiliary_train
+  fields:
+    - question
+    - subject
+
+  entries_in_raw_dataset: 99842
+
+#dict_keys(['question', 'subject', 'choices', 'answer'])
+#/fs/cml-projects/llm-pretraining/classifier_datasets/
